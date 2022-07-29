@@ -1,0 +1,22 @@
+[
+  {
+    "id":1,
+    "name":"tv smart 43 pulagadas",
+    "price":100000
+  },
+  {
+    "id":2,
+    "name":"smartphone",
+    "price":100000
+  },
+  {
+    "id":3,
+    "name":"heladera",
+    "price":330000
+  },
+  {
+    "id":4,
+    "name":"microonda",
+    "price":100000
+  }
+]

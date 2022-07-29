@@ -7,7 +7,13 @@ const router = Router() */
 // const router = require('express').Router()
 
 
-const { index } = require('../controllers/index.controller')
+const { intro, portfolio, about, contact,portfolioDetail } = require('../controllers/index.controller')
 /* exporto */  /* declaro router */  /* requiero express ejecutando el método Router */
 module.exports = router = require('express').Router()
-  .get('/', index)
+  .get('/', intro)
+  .get('/portfolio', portfolio)
+  .get('/about', about)
+  .get('/contact', contact)
+
+  /* Ruta parametrizada */
+  .get('/portfolio/:id', portfolioDetail)
