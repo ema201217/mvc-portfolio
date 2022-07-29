@@ -1,0 +1,393 @@
+/* HOME | HEADER */
+/* ------------- */
+
+main.home {
+    font-family: sans-serif;
+}
+
+/* |||||||||||||||||||| */
+/* HOME | SECTION INTRO */
+/* |||||||||||||||||||| */
+
+main.home  .section-intro {
+    align-items: center;
+    background-color: var(--green);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px 10px 80px;
+    text-align: center;
+}
+
+main.home  .section-intro figure {
+    clip-path: circle(45%);
+    width: 90%;
+    max-width: 300px;
+}
+
+main.home  .section-intro figure img {
+    width: 100%;
+}
+
+main.home  .section-intro .text-container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: space-between;
+}
+
+main.home  .section-intro .text-container h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+main.home  .section-intro .text-container .star-lines-container {
+    align-items: center;
+    display: flex;
+    gap: 5px;
+}
+
+main.home  .section-intro .text-container .star-lines-container .line {
+    background-color: #fff;
+    display: inline-block;
+    height: 4px;
+    width: 100px;
+}
+
+main.home  .section-intro .text-container .star-lines-container .star {
+    font-size: 1.5rem;
+}
+
+main.home  .section-intro .text-container p {
+    font-size: 1.5rem;
+}
+
+/* |||||||||||||||||||||||| */
+/* HOME | SECTION PORTFOLIO */
+/* |||||||||||||||||||||||| */
+
+main.home  .section-portfolio {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 80px 10px;
+    text-align: center;
+
+}
+
+main.home  .section-portfolio h2 {
+    font-size: 2rem;
+    letter-spacing: 3px;
+}
+
+main.home  .section-portfolio .star-lines-container {
+    align-items: center;
+    display: flex;
+    gap: 5px;
+}
+
+main.home  .section-portfolio .star-lines-container .line {
+    background-color: #000;
+    display: inline-block;
+    height: 4px;
+    width: 100px;
+}
+
+main.home  .section-portfolio .star-lines-container .star {
+    font-size: 1.5rem;
+}
+
+main.home  .section-portfolio .section-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+main.home  .section-portfolio .section-images figure {
+    width: 100%;
+   margin-top: 20px; 
+}
+
+main.home  .section-portfolio .section-images figure img {
+    width: 100%;
+}
+
+/* |||||||||||||||||||| */
+/* HOME | SECTION ABOUT */
+/* |||||||||||||||||||| */
+
+main.home  .section-about {
+    align-items: center;
+    background-color: var(--green);
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 80px 15px;
+    text-align: center;
+}
+
+main.home  .section-about h2 {
+    font-size: 2rem;
+    letter-spacing: 3px;
+}
+
+main.home  .section-about .star-lines-container {
+    align-items: center;
+    display: flex;
+    gap: 5px;
+}
+
+main.home  .section-about .star-lines-container .line {
+    background-color: #fff;
+    display: inline-block;
+    height: 4px;
+    width: 100px;
+}
+
+main.home  .section-about .star-lines-container .star {
+    font-size: 1.5rem;
+}
+
+main.home  .section-about .paragraph-container {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+    gap: 20px;
+    text-align: left;
+}
+
+
+/* PSEUDOELEMENTO FIRST-LETTER */
+/* .home  .section-about .paragraph-container p::first-letter {
+    font-size: 3rem;
+    color: red;
+}  */
+
+/* PSEUDOELEMENTO FIRST-LINE */
+/* .home  .section-about .paragraph-container p::first-line {
+    font-size: 2rem;
+    color:var(--dark-gray);
+}  */
+
+main.home  .section-about .btn-download {
+    align-items: center;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    gap: 6px;
+    outline: 3px solid var(--white);
+    overflow: hidden;
+    padding: 15px 20px;
+    position: relative;
+    transition: outline .3s, background 1s;
+}
+
+main.home  .section-about .btn-download .download {
+    left: 0;
+    position: relative;
+    transform: scale(1);
+    transition: all 1s;
+}
+
+main.home  .section-about .btn-download p {
+    font-size: 1.1rem;
+    left: 0px;
+    position: relative;
+    transition: left 1s;
+}
+
+/* ||||||||||||||||||||||||||||||||||||||||||||||| */
+/* TRANSICIONES BTN DOWNLOAD CON PSEUDOCLASS HOVER */
+/* ||||||||||||||||||||||||||||||||||||||||||||||| */
+main.home  .section-about .btn-download:hover {
+    background-color: var(--dark-gray);
+    outline-width: 1px;
+    position: relative;
+    transition: outline .3s, background 1s;
+}
+
+main.home  .section-about .btn-download:hover>.download {
+    left: 50%;
+    transform: translateX(-50%) scale(1.6);
+    transition: all 1s;
+}
+
+main.home  .section-about .btn-download:hover>p {
+    left: 200px;
+    transition: left 1.2s;
+}
+
+/* |||||||||||||||||||||| */
+/* HOME | SECTION CONTACT */
+/* |||||||||||||||||||||| */
+
+main.home  .section-contact {
+    align-items: center;
+    color: var(--dark);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    gap: 30px;
+    padding: 80px 15px;
+    text-align: center;
+    max-width: 700px;
+}
+
+main.home  .section-contact h2 {
+    font-size: 2rem;
+    letter-spacing: 3px;
+}
+
+main.home  .section-contact .star-lines-container {
+    align-items: center;
+    display: flex;
+    gap: 5px;
+}
+
+main.home  .section-contact .star-lines-container .line {
+    background-color: var(--dark);
+    display: inline-block;
+    height: 4px;
+    width: 100px;
+}
+
+main.home  .section-contact .star-lines-container .star {
+    font-size: 1.5rem;
+}
+
+main.home .section-contact form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+main.home  .section-contact form .group-item {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: left;
+    width: 100%;
+}
+
+/* main.home  .section-contact form .group-item label{} */
+
+main.home  .section-contact form .group-item input {
+    border-radius: 2px;
+    border:none;
+    border-bottom: 1px solid var(--light-gray);
+    outline: none;
+    padding: 10px 5px;
+}
+/* PSEUDOCLASE DISABLE --> EN INPUTS*/
+/* main.home  .section-contact form .group-item input:disabled {
+   border:1px solid red
+} */
+
+/* PSEUDOELEMENTO PLACEHOLDER */
+/* main.home  .section-contact form .group-item input::placeholder {
+    color: var(--green);
+    letter-spacing: 2px;
+} */
+
+
+
+/* FOCUS */
+/* main.home  .section-contact form .group-item input:focus,
+main.home  .section-contact form .group-item textarea:focus {
+    background-color: var(--light-gray);
+    color: darkblue;
+    box-shadow: 4px 4px 10px red;
+    transition: all 3s;
+} */
+
+
+
+main.home  .section-contact form .group-item textarea {
+    border: none;
+    border-bottom: 1px solid var(--light-gray);
+    border-radius: 2px;
+    height: 100px;
+    outline: none;
+    padding: 10px 5px;
+    resize: none;
+}
+
+main.home .section-contact form button.btn-send {
+    width: fit-content;
+    align-content:flex-start;
+    background-color: var(--green);
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    padding: 12px;
+    cursor: pointer;
+}
+
+/* PSEUDOCLASE DISABLE --> EN BUTTON */
+/* main.home .section-contact form button.btn-send:disabled {
+    background-color: rgba(243, 132, 132, 0.639);
+    cursor: help;
+} */
+
+
+@media (min-width:768px) {
+    /* Section portfolio */
+    main.home  .section-portfolio {
+        padding: 80px;
+        
+    }
+
+    main.home  .section-portfolio .section-images {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 0;
+    }
+
+    main.home  .section-portfolio .section-images figure {
+        width: 48%;
+    }
+
+    /* Section about */
+    main.home  .section-about {
+        padding: 80px 60px;
+    }
+
+    main.home  .section-about .paragraph-container {
+        font-size: 1.2rem;
+        text-align: justify;
+    }
+
+    /* Section contact */
+   main.home  .section-contact form {
+    } 
+
+   main.home  .section-contact form .group-item {     
+    } 
+
+main.home  .section-contact form .group-item input{
+    } 
+
+   main.home  .section-contact form .group-item textarea{
+    }  
+}
+
+@media (min-width:1024px) {
+    main.home .section-portfolio .section-images figure {
+        width: 32%;
+    }
+
+    main.home .section-about .paragraph-container {
+        flex-direction: row;
+        justify-content: center;
+        gap: 40px;
+        max-width: 70%;
+        text-align: left;
+    }
+}
